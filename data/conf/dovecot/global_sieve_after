@@ -9,7 +9,7 @@ require "envelope";
 require "duplicate";
 
 if header :contains "X-Spam-Flag" "YES" {
-  fileinto "Junk";
+  fileinto "Spam";
 }
 
 if allof (
